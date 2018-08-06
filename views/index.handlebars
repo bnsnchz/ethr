@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="../css/slideshow.css">
+<div id="whole">
+    <div class='game-feed'>
+        <h2>About</h2>
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+            ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+    </div>
+    <div class='user-reviews'>
+        <h2>Community Game Reviews</h2>
+
+        <div class="slideshow-container">
+
+            <div class="slideshow-container">
+
+                {{#each this}}
+                <div class="mySlides fade">
+                    <h1>Game: {{gameName}}</h1>
+                    <h2>{{title}}</h2>
+                    <h4>Rating: {{rating}}
+                        <i class="fas fa-star"></i>
+                    </h4>
+                    <p>{{body}}</p>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+<Script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3500);
+    }
+</Script>

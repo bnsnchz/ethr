@@ -1,0 +1,43 @@
+#all-results {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background-color: rgb(35, 35, 35);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 30px;
+    padding-top: 25px; 
+    color: rgb(200, 200, 200);
+    background-color: rgb(35, 35, 35);
+    font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    border-style: solid;
+    border-color: rgb(20, 20, 20);
+    border-width: 10px 7px 0px 7px;
+    text-align: center;
+}
+
+.game-name {
+    padding-left: 30px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.game-posters {
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+#all-results {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#blank {
+    background-color: #333;
+    margin: 5px;
+}

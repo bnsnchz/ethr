@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="../css/search.css" type="text/css" />
+
+<div id="all-results">
+    {{#each this}}
+    <a id="{{name}}" class="games" href="/game/search/" + "{{name}}">
+        <div id="game-cover">
+            <img class="game-posters" src='{{cover}}' alt="{{name}}">
+        </div>
+        <div id="game-info">
+            <div id="game-title">
+                <p class="game-name">{{name}}</p>
+            </div>
+        </div>
+    </a>
+    {{/each}}
+</div>
+</div>
